@@ -1,3 +1,4 @@
+
 {
     "version": "2.0.0",
     "tasks": [
@@ -7,7 +8,7 @@
             "command": "zsh",
             "args": [
                 "-c",
-                "g++ -std=c++17 -o \"${fileDirname}/${fileBasenameNoExtension}\" \"${file}\" && \"${fileDirname}/${fileBasenameNoExtension}\" < \"${fileDirname}/input.txt\" > \"${fileDirname}/output.txt\""
+                "/usr/bin/clang++ -std=c++17 -o \"${fileDirname}/${fileBasenameNoExtension}\" \"${file}\" && \"${fileDirname}/${fileBasenameNoExtension}\" < \"${fileDirname}/../input.txt\" > \"${fileDirname}/../output.txt\""
             ],
             "group": {
                 "kind": "build",
